@@ -48,7 +48,7 @@
 
 .fa:hover {
     opacity: 0.7;
-    transform: scale(1, 2);
+    color: black;
 }
 
 .fa-facebook {
@@ -74,6 +74,10 @@
 .fa-instagram {
     background: #125688;
     color: white;
+}
+
+.carousel {
+    height: fit-content;
 }
 
 
@@ -140,6 +144,9 @@
         width: 500px;
     }
     .social_links {
-        margin-left: 50px;
+        margin-left: 25%;
+    }
+    .herotext {
+        margin-left: 15%;
     }
 }
