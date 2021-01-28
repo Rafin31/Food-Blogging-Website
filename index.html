@@ -30,6 +30,8 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- external Javascript -->
+    <script src="index.js"></script>
 
     <title>Foodies</title>
 </head>
@@ -140,42 +142,79 @@
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap w-full mb-20">
                     <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Best Burgers in Town ! </h1>
                         <div class="h-1 w-20 bg-indigo-500 rounded"></div>
                     </div>
-                    <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+                    <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">What makes a burger ‘Great’? Is it the texture of the bun or the tenderness and juiciness of the meat inside? Is it the perfection of the patty or the sauce that swirls around within? The reality is, even if you follow a recipe word
+                        to word, the odds are that the burger won’t be as tasty as you wanted it to be. I’ve had so many bad burgers in my life, that I lost count. Starting from that minuscule 15 taka burger in the school canteen, which was basically
+                        a little piece of beef potato chop tossed inside a bun; to that newly opened, over-hyped food court in the city where they served a fried chicken with bones and everything inside a soft bun; the truth is, my 90s childhood in Dhaka
+                        wasn’t that scrumptious. However, it’s the past 15 years that gave rise to the vibrant and thriving food industry of Bangladesh, with Dhaka being the center. Living in 2015, and having tried most of the burgers all around the city,
+                        it feels great to recommend some burgers which I believe are ‘must-eats’ if you are in Dhaka.</p>
                 </div>
                 <div class="flex flex-wrap -m-4">
                     <div class="xl:w-1/4 md:w-1/2 p-4">
                         <div class="bg-gray-100 p-6 rounded-lg">
                             <img class="h-40 rounded w-full object-cover object-center mb-6" src="Photos/burger2.JPG" alt="content">
-                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">#Burger</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">American burger</h2>
+                            <p class="leading-relaxed text-base">Writing about this burger made me feel a bit nostalgic, because as far as I can remember,</p>
+
+
+                            <div id="demo1" class="collapse">
+                                this was the first proper burger I’ve had in Dhaka back in the late 2000s. The place is still up and running with multiple branches all over the city. Freshly grilled patty with gourmet cheese slices, there’s absolutely no reason not to have a smile on
+                                your face when you leave this place after a meal. However, the place lacks consistency in taste between its many branches. I personally find the one in Satmasjid Road and the one in Gulshan 2 more authentic in flavor than
+                                the other ones.
+                                <br> <span style="font-weight: 500;"> Price: BDT 300 (around USD 4) </span>
+                            </div>
+                            <button onclick="reviewButton()" id="review_Button" class="btn btn-dark" data-toggle="collapse" data-target="#demo1">Show more</button>
                         </div>
                     </div>
                     <div class="xl:w-1/4 md:w-1/2 p-4">
                         <div class="bg-gray-100 p-6 rounded-lg">
                             <img class="h-40 rounded w-full object-cover object-center mb-6" src="Photos/burger3.JPG" alt="content">
-                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
-                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">#Burger</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Pabulam</h2>
+                            <p class="leading-relaxed text-base">Only by the looks of it you can tell that this can’t go wrong. Beautiful, elegant and gargantuan. It is impossible, rather ‘possimpible’ to eat such an enormous treat in the traditional way,</p>
+
+
+                            <div id="demo2" class="collapse">
+                                The burger itself is a multi storied cheese filled, mayo soaked, super juicy beef with a whole lot of ketchup, lettuce, black olives and tomato on top. This is the kind of burger which you should not try everyday unless you want to die of cardiac arrest,
+                                but this is also the ‘guilty pleasure’ burger you crave for every once in a while. <br> <span style="font-weight: 500;"> BDT 485 (around USD 6) </span>
+                            </div>
+                            <button onclick="reviewButton()" id="review_Button" class="btn btn-dark" data-toggle="collapse" data-target="#demo2">Show more</button>
                         </div>
                     </div>
                     <div class="xl:w-1/4 md:w-1/2 p-4">
                         <div class="bg-gray-100 p-6 rounded-lg">
                             <img class="h-40 rounded w-full object-cover object-center mb-6" src="Photos/burger4.JPG" alt="content">
-                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
-                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">#Burger</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Takeout</h2>
+                            <p class="leading-relaxed text-base">This gem of a burger joint is located in Kamal Ataturk Avenue. You might face trouble finding it at first. If you live farther away from Gulshan, the journey through all the traffic can be stressful; but trust me when I say
+                                this,
+                            </p>
+
+
+                            <div id="demo3" class="collapse">
+                                one bite from this soft bread with juicy meat and beef bacon will make it all worthwhile. The meaty delight is coated in mayo and barbecue sauce which gives the flavor an extra punch while you’re enjoying a mouthful. If I had to give an unbiased opinion
+                                I must say that this is absolutely my favorite burger in Dhaka. However many of my foodie friends don’t feel the same way and I have received multiple mixed reviews so I couldn’t go out on a limb and preach it as the best
+                                burger. <br> <span style="font-weight: 500;"> BDT 330 (around USD 4)  </span>
+                            </div>
+                            <button onclick="reviewButton()" id="review_Button" class="btn btn-dark" data-toggle="collapse" data-target="#demo3">Show more</button>
                         </div>
                     </div>
                     <div class="xl:w-1/4 md:w-1/2 p-4">
                         <div class="bg-gray-100 p-6 rounded-lg">
                             <img class="h-40 rounded w-full object-cover object-center mb-6" src="Photos/Burger1.JPG" alt="content">
-                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
-                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">#Burger</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mr. Burger</h2>
+                            <p class="leading-relaxed text-base">This gem of a burger joint is located in Kamal Ataturk Avenue. You might face trouble finding it at first. If you live farther away from Gulshan, the journey through all the traffic can be stressful; but trust me when I say</p>
+
+                            <div id="demo4" class="collapse">
+                                one bite from this soft bread with juicy meat and beef bacon will make it all worthwhile. The meaty delight is coated in mayo and barbecue sauce which gives the flavor an extra punch while you’re enjoying a mouthful. If I had to give an unbiased opinion
+                                I must say that this is absolutely my favorite burger in Dhaka. However many of my foodie friends don’t feel the same way and I have received multiple mixed reviews so I couldn’t go out on a limb and preach it as the best
+                                burger. <br> <span style="font-weight: 500;"> BDT 330 (around USD 4)  </span>
+                            </div>
+                            <button onclick="reviewButton()" id="review_Button" class="btn btn-dark" data-toggle="collapse" data-target="#demo4">Show more</button>
                         </div>
                     </div>
                 </div>
