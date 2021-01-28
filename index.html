@@ -38,9 +38,9 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark  ">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top  ">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Foodies</a>
+        <a class="navbar-brand" href="/">Foodies</a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -51,7 +51,7 @@
         <div class="collapse navbar-collapse justify-content-end  " id="collapsibleNavbar">
             <ul class="navbar-nav  ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#carouselExampleIndicators">Home</a>
                 </li>
                 <!-- Dropdown -->
                 <li class="nav-item dropdown">
@@ -59,16 +59,16 @@
           Catagories
         </a>
                     <div class="dropdown-menu dropdown-menu-right animate slideIn">
-                        <a class="dropdown-item" href="#">Burger's</a>
-                        <a class="dropdown-item" href="#">Kabab's</a>
-                        <a class="dropdown-item" href="#">Pizza's</a>
+                        <a class="dropdown-item" href="#bu">Burger's</a>
+                        <a class="dropdown-item" href="#kab">Kabab's</a>
+                        <a class="dropdown-item" href="#piz">Pizza's</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#abo">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#con">Contact</a>
                 </li>
             </ul>
         </div>
@@ -112,7 +112,7 @@
 
     <!-- About Section -->
 
-    <div class="heroSection">
+    <div id="abo" class="heroSection">
         <section class="text-gray-600 body-font">
             <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -124,11 +124,11 @@
                     </h1>
                     <p class="mb-8 leading-relaxed">Eating is my passion. I love to eat and explore new places. So I have decided to share my experiences with you .So Lets start and be a part of my wonderfull experiences. </p>
                     <div class=" social_links flex justify-center">
-                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="https://www.facebook.com/asif.hossain.58760608" target="_blank" class="fa fa-facebook"></a>
                         <a href="#" class="fa fa-twitter"></a>
                         <a href="#" class="fa fa-google"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
-                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/asif-hossain-6982b81ba/" target="_blank" class="fa fa-linkedin"></a>
+                        <a href="https://www.instagram.com/asif_h_rafin/?hl=en" target="_blank" class="fa fa-instagram"></a>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@
     <!-- burgerSection -->
 
     <div class="burgers">
-        <section class="text-gray-600 body-font">
+        <section id="bu" class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap w-full mb-20">
                     <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -224,7 +224,7 @@
 
     <!-- pizzaSection -->
 
-    <div class="pizza">
+    <div id="piz" class="pizza">
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap w-full mb-20">
@@ -307,7 +307,7 @@
     </div>
 
     <!-- kababSection -->
-    <div class="kababs">
+    <div id="kab" class="kababs">
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap w-full mb-20">
@@ -423,7 +423,7 @@
     </div>
 
     <!-- contacts -->
-    <section class="text-gray-600 body-font relative">
+    <section id="con" class="text-gray-600 body-font relative">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-12">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
@@ -450,12 +450,12 @@
                         </div>
                     </div>
                     <div class="p-2 w-full">
-                        <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                        <button onclick="validation()" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
                     </div>
                     <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                         <a class="text-indigo-500">example@email.com</a>
                         <p class="leading-normal my-5">Dhaka
-                            <br>Bangladesh
+                            <br>Bangladesh.
                         </p>
 
 
@@ -465,6 +465,8 @@
             </div>
         </div>
     </section>
+    <!-- topButton -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <!-- footer -->
 
@@ -503,6 +505,9 @@
           </span>
         </div>
     </footer>
+
+
+
 </body>
 
 </html>
