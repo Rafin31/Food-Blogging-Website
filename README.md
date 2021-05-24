@@ -1,1 +1,1 @@
-# Visit Foodies https://rafin31.github.io/Food-Blogging-Website/
+# Visit Foodies https://rafin31.github.io/Foodies/
